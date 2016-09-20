@@ -30,6 +30,30 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
+    vendor/oneplus/bacon/proprietary/bin/cnd:system/bin/cnd \
+    vendor/oneplus/bacon/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/oneplus/bacon/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
+    vendor/oneplus/bacon/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
+    vendor/oneplus/bacon/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
+    vendor/oneplus/bacon/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
+    vendor/oneplus/bacon/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    vendor/oneplus/bacon/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
+    vendor/oneplus/bacon/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
+    vendor/oneplus/bacon/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
+    vendor/oneplus/bacon/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
+    vendor/oneplus/bacon/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
+    vendor/oneplus/bacon/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
+    vendor/oneplus/bacon/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
+    vendor/oneplus/bacon/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
+    vendor/oneplus/bacon/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/oneplus/bacon/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/oneplus/bacon/proprietary/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
     vendor/oneplus/bacon/proprietary/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
@@ -48,12 +72,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/oneplus/bacon/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/oneplus/bacon/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    vendor/oneplus/bacon/proprietary/vendor/lib/hw/activity_recognition.msm8974.so:system/vendor/lib/hw/activity_recognition.msm8974.so \
+    vendor/oneplus/bacon/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/oneplus/bacon/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libslimclient.so:system/vendor/lib/libslimclient.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -90,9 +115,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
-    vendor/oneplus/bacon/proprietary/vendor/lib/libqmi_csvt_srvc.so:system/vendor/lib/libqmi_csvt_srvc.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
@@ -101,17 +126,23 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/bin/radish:system/bin/radish \
     vendor/oneplus/bacon/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/oneplus/bacon/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+    vendor/oneplus/bacon/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
+    vendor/oneplus/bacon/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/oneplus/bacon/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/oneplus/bacon/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/oneplus/bacon/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
     vendor/oneplus/bacon/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
+    vendor/oneplus/bacon/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/oneplus/bacon/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/oneplus/bacon/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
+    vendor/oneplus/bacon/proprietary/vendor/lib/hw/activity_recognition.msm8974.so:system/vendor/lib/hw/activity_recognition.msm8974.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/hw/sensors.msm8974.so:system/vendor/lib/hw/sensors.msm8974.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
@@ -131,13 +162,10 @@ endif
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
+    vendor/oneplus/bacon/proprietary/lib/hw/camera.vendor.bacon.so:system/lib/hw/camera.vendor.bacon.so \
     vendor/oneplus/bacon/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/oneplus/bacon/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/oneplus/bacon/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
-    vendor/oneplus/bacon/proprietary/lib/hw/camera.msm8974.so:system/lib/hw/camera.msm8974.so \
-    vendor/oneplus/bacon/proprietary/vendor/lib/libactuator_dw9714.so:system/vendor/lib/libactuator_dw9714.so \
-    vendor/oneplus/bacon/proprietary/vendor/lib/libactuator_dw9714_camcorder.so:system/vendor/lib/libactuator_dw9714_camcorder.so \
-    vendor/oneplus/bacon/proprietary/vendor/lib/libactuator_dw9714_camera.so:system/vendor/lib/libactuator_dw9714_camera.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
@@ -145,10 +173,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
-    vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
-    vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_q3a_special.so:system/vendor/lib/libmmcamera2_q3a_special.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
@@ -196,64 +222,3 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
     vendor/oneplus/bacon/proprietary/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
     vendor/oneplus/bacon/proprietary/vendor/lib/libAKM8963.so:system/vendor/lib/libAKM8963.so
-
-# Firmware images
-PRODUCT_COPY_FILES += \
-    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b00:system/etc/firmware/adsp.b00 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b01:system/etc/firmware/adsp.b01 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b02:system/etc/firmware/adsp.b02 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b03:system/etc/firmware/adsp.b03 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b04:system/etc/firmware/adsp.b04 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b05:system/etc/firmware/adsp.b05 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b06:system/etc/firmware/adsp.b06 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b07:system/etc/firmware/adsp.b07 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b08:system/etc/firmware/adsp.b08 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b09:system/etc/firmware/adsp.b09 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b10:system/etc/firmware/adsp.b10 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b11:system/etc/firmware/adsp.b11 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b12:system/etc/firmware/adsp.b12 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.mdt:system/etc/firmware/adsp.mdt \
-    vendor/oneplus/bacon/proprietary/etc/firmware/cmnlib.b00:system/etc/firmware/cmnlib.b00 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/cmnlib.b01:system/etc/firmware/cmnlib.b01 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/cmnlib.b02:system/etc/firmware/cmnlib.b02 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/cmnlib.b03:system/etc/firmware/cmnlib.b03 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/cmnlib.mdt:system/etc/firmware/cmnlib.mdt \
-    vendor/oneplus/bacon/proprietary/etc/firmware/isdbtmm.b00:system/etc/firmware/isdbtmm.b00 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/isdbtmm.b01:system/etc/firmware/isdbtmm.b01 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/isdbtmm.b02:system/etc/firmware/isdbtmm.b02 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/isdbtmm.b03:system/etc/firmware/isdbtmm.b03 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/isdbtmm.mdt:system/etc/firmware/isdbtmm.mdt \
-    vendor/oneplus/bacon/proprietary/etc/firmware/keymaste.b00:system/etc/firmware/keymaste.b00 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/keymaste.b01:system/etc/firmware/keymaste.b01 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/keymaste.b02:system/etc/firmware/keymaste.b02 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/keymaste.b03:system/etc/firmware/keymaste.b03 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/keymaste.mdt:system/etc/firmware/keymaste.mdt \
-    vendor/oneplus/bacon/proprietary/etc/firmware/mc_v2.b00:system/etc/firmware/mc_v2.b00 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/mc_v2.b01:system/etc/firmware/mc_v2.b01 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/mc_v2.b02:system/etc/firmware/mc_v2.b02 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/mc_v2.b03:system/etc/firmware/mc_v2.b03 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/mc_v2.mdt:system/etc/firmware/mc_v2.mdt \
-    vendor/oneplus/bacon/proprietary/etc/firmware/playread.b00:system/etc/firmware/playread.b00 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/playread.b01:system/etc/firmware/playread.b01 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/playread.b02:system/etc/firmware/playread.b02 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/playread.b03:system/etc/firmware/playread.b03 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/playread.mdt:system/etc/firmware/playread.mdt \
-    vendor/oneplus/bacon/proprietary/etc/firmware/tqs.b00:system/etc/firmware/tqs.b00 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/tqs.b01:system/etc/firmware/tqs.b01 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/tqs.b02:system/etc/firmware/tqs.b02 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/tqs.b03:system/etc/firmware/tqs.b03 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/tqs.mdt:system/etc/firmware/tqs.mdt \
-    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.b00:system/etc/firmware/wcnss.b00 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.b01:system/etc/firmware/wcnss.b01 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.b02:system/etc/firmware/wcnss.b02 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.b06:system/etc/firmware/wcnss.b06 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.b07:system/etc/firmware/wcnss.b07 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.b08:system/etc/firmware/wcnss.b08 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.b09:system/etc/firmware/wcnss.b09 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt \
-    vendor/oneplus/bacon/proprietary/etc/firmware/widevine.b00:system/etc/firmware/widevine.b00 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/widevine.b01:system/etc/firmware/widevine.b01 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/widevine.b02:system/etc/firmware/widevine.b02 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/widevine.b03:system/etc/firmware/widevine.b03 \
-    vendor/oneplus/bacon/proprietary/etc/firmware/widevine.mdt:system/etc/firmware/widevine.mdt
