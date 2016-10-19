@@ -22,7 +22,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
-    QtiTelephonyService \
     shutdownlistener \
     TimeService
 
